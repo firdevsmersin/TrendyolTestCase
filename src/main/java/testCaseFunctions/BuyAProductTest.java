@@ -44,7 +44,7 @@ public class BuyAProductTest extends BaseClass {
         try {
             webDriver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
             webElement(By.id("myBasketListItem")).click();
-            Thread.sleep(2000);
+            Thread.sleep(3000);
             AssertionOfPageLoading("https://www.trendyol.com/sepetim#/basket");
             webElement(By.linkText("Sepeti Onayla")).click();
             Thread.sleep(2000);

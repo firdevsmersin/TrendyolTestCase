@@ -1,6 +1,8 @@
 package testCases;
 
 import listener.Listener;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import testCaseFunctions.BoutiqueImageTest;
@@ -9,7 +11,7 @@ import testCaseFunctions.LoginTest;
 import utils.BaseTest;
 
 @Listeners(Listener.class)
-public class SearchTestCase extends BaseTest {
+public class TestsClass extends BaseTest {
 
     @Test(priority = 2)
     public void ClickLoginButtonTest() {

@@ -25,7 +25,7 @@ public class LoginTest extends BaseClass {
     public void LoginAsUser(){
         try {
             webDriver.manage().timeouts().implicitlyWait(25, TimeUnit.SECONDS);
-            webElement(By.id("login-email")).sendKeys("firdevsmersin35@gmail.com");
+            webElement(By.id("login-email")).sendKeys("test_user@gmail.com");
             webElement(By.id("login-password-input")).sendKeys("test1234");
             Thread.sleep(2000);
             webElement(By.xpath("//button[@class='q-primary q-fluid q-button-medium q-button submit'][.//span[contains(text(), 'Giriş Yap')]]")).click();

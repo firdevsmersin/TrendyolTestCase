@@ -1,7 +1,6 @@
 package listener;
 
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -35,6 +34,7 @@ public class Listener extends BaseTest implements ITestListener {
     }
 
     public void onStart(ITestContext iTestContext) {
+
         System.setProperty("webdriver.chrome.driver","C:\\Users\\z5070\\Desktop\\TrendyolTestCase\\drivers\\chromedriver.exe");
 
         try{
@@ -51,10 +51,10 @@ public class Listener extends BaseTest implements ITestListener {
     }
 
     public void onFinish(ITestContext iTestContext) {
-        /*try{
+        try{
             webDriver.quit();
         } catch (Exception ex){
             log.info("Error: WebDriver can't quit !");
-        }*/
+        }
     }
 }
